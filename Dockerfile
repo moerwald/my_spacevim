@@ -1,2 +1,6 @@
 FROM spacevim/spacevim:latest
-RUN mkdir /data
+
+USER spacevim
+
+WORKDIR $HOME
+RUN mkdir -p $HOME/src
